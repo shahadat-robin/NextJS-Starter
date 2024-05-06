@@ -1,7 +1,7 @@
 import type { FC, PropsWithChildren } from 'react';
 
 interface Props extends PropsWithChildren {
-  size: any;
+  size: string;
 }
 
 const Button: FC<Props> = ({ children }) => {
