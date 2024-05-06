@@ -11,7 +11,9 @@
     "prepare": "husky"
   },
   "lint-staged": {
-    "*.{js,jsx,ts,tsx,md,html,css,json}": "yarn format"
+    "*.{js,jsx,ts,tsx,md,html,css,json}": [
+      "yarn format"
+    ]
   },
   "dependencies": {
     "next": "^14.2.3",
