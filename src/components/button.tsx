@@ -5,7 +5,11 @@ interface Props extends PropsWithChildren {
 }
 
 const Button: FC<Props> = ({ children }) => {
-  return <button className="Hello world">{children}</button>;
+  return (
+    <button className="Hello world" accessKey="">
+      {children}
+    </button>
+  );
 };
 
 export default Button;
