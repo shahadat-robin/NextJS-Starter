@@ -5,7 +5,7 @@ interface Props extends PropsWithChildren {
 }
 
 const Button: FC<Props> = ({ children }) => {
-  return <button className="Hell">{children}</button>;
+  return <button className="Hello world">{children}</button>;
 };
 
 export default Button;
