@@ -1,8 +1,10 @@
-import React, { type PropsWithChildren, type FC } from 'react';
+import type { FC, PropsWithChildren } from 'react';
 
-const Button: FC<PropsWithChildren> = ({ children }) => {
-  //   console.log('Button component');
+interface Props extends PropsWithChildren {
+  size: any;
+}
 
+const Button: FC<Props> = ({ children }) => {
   return <button>{children}</button>;
 };
 
