@@ -6,13 +6,13 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "format": "prettier . --write ",
+    "format": "prettier . --write",
     "lint": "next lint --max-warnings=0",
     "prepare": "husky"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx,md,html,css,json}": [
-      "yarn format"
+      "prettier --write"
     ]
   },
   "dependencies": {
