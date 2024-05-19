@@ -7,6 +7,7 @@ This is a [Next.js](https://nextjs.org/) project starter kit bootstrapped with [
 - **TypeScript:** TypeScript support for type safety and better developer experience.
 - **Tailwind CSS:** Utility-first CSS framework for rapid UI development.
 - **ESLint and Prettier:** Code quality tools to maintain a consistent codebase.
+- **Husky:** Automatically lint commit messages and code upon committing.
 - **Environment Variables:** Easy management of environment variables.
 - **Customizable Layout:** Flexible layouting components.
 
