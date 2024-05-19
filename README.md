@@ -45,7 +45,6 @@ Open [http://localhost:3000](http://localhost:3000) into your browser to see the
 ## Project Structure
 
 ```plaintext
-
 NextJS-Starter/
 ├── public/                # Static assets
 │   pages/                 # Next.js pages
