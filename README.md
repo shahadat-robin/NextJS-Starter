@@ -1,36 +1,73 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# NextJS-Starter
 
-## Getting Started
+This is a [Next.js](https://nextjs.org/) project starter kit bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Next.js 14:** The latest version of Next.js with all its powerful features.
+- **TypeScript:** TypeScript support for type safety and better developer experience.
+- **Tailwind CSS:** Utility-first CSS framework for rapid UI development.
+- **ESLint and Prettier:** Code quality tools to maintain a consistent codebase.
+- **Husky:** Automatically lint commit messages and code upon committing.
+- **Environment Variables:** Easy management of environment variables.
+- **Customizable Layout:** Flexible layouting components.
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+
+## Getting Start
+
+### Prerequisites
+
+- Node.js (>= 18.17)
+- yarn
+
+### Installation
+
+```bash
+
+# Clone the repository:
+git clone https://github.com/yourusername/NextJS-Starter.git
+
+# Go to project directory
+cd NextJS-Starter
+
+# Install dependencies:
+yarn
+
+# Start the development server:
+yarn dev
+# or
+npm run dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) into your browser to see the result.
+
+## Project Structure
+
+```plaintext
+
+NextJS-Starter/
+├── public/                # Static assets
+│   pages/                 # Next.js pages
+├── src/
+│   ├── styles/            # Global styles
+│   ├── layouts/           # Layout components
+│   ├── components/        # Reusable components
+│   ├── page-builder/      # Build page from here with better and simpler drive more custom component.
+│   ├── utils/             # Utility functions
+│   ├── hooks/             # Custom React hooks
+│   ├── services/          # API services
+│   └── context/           # React context for global state
+├── .eslintrc.js           # ESLint configuration
+├── .prettierrc            # Prettier configuration
+├── jest.config.js         # Jest configuration
+├── next.config.js         # Next.js configuration
+├── tsconfig.json          # TypeScript configuration
+└── package.json           # Project metadata and scripts
+```
 
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
 
 - [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
