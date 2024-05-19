@@ -2,7 +2,12 @@
   "name": "nextjs-starter",
   "version": "0.0.1",
   "private": true,
+  "engines": {
+    "node": ">=18.17.0",
+    "yarn": ">=1.22.0"
+  },
   "scripts": {
+    "preinstall": "npx only-allow yarn",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
@@ -14,6 +19,7 @@
     "*.{js,jsx,ts,tsx,md,html,css,json}": "prettier --write"
   },
   "dependencies": {
+    "axios": "^1.6.8",
     "clsx": "^2.1.1",
     "next": "^14.2.3",
     "react": "^18",
@@ -29,6 +35,7 @@
     "eslint-config-prettier": "^9.1.0",
     "husky": "^9.0.11",
     "lint-staged": "^15.2.2",
+    "only-allow": "^1.2.1",
     "postcss": "^8",
     "prettier": "3.2.5",
     "tailwindcss": "^3.4.1",
