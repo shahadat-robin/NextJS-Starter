@@ -4,7 +4,7 @@ import type { FC } from 'react';
 
 const AppHeader: FC = () => {
   return (
-    <header className="border p-5 sticky top-0 bg-white z-50">
+    <header className="p-5 sticky top-0 bg-primary z-50">
       <Container>
         <Image
           src="/next.svg"
