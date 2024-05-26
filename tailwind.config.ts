@@ -1,7 +1,11 @@
 import type { Config } from 'tailwindcss';
 
 const config: Config = {
-  content: ['./src/**/*.{js,ts,jsx,tsx,mdx}', './app/**/*.{js,ts,jsx,tsx,mdx}'],
+  content: [
+    './src/**/*.{js,ts,jsx,tsx,mdx}',
+    './app/**/*.{js,ts,jsx,tsx,mdx}',
+    './node_modules/tw-elements-react/dist/js/**/*.js',
+  ],
   theme: {
     extend: {
       colors: {
@@ -15,6 +19,6 @@ const config: Config = {
       },
     },
   },
-  plugins: [],
+  plugins: [require('tw-elements-react/dist/plugin.cjs')],
 };
 export default config;
