@@ -4,7 +4,6 @@ import IconStore from '@/components/icon-store';
 import Typography from '@/components/typography';
 import { cn } from '@/utils/class-merge';
 import type { FC } from 'react';
-import { TERipple } from 'tw-elements-react';
 import type { ISection } from '../interface';
 
 const HeroSection: FC<ISection> = ({ navbarHeight }) => {
@@ -22,11 +21,9 @@ const HeroSection: FC<ISection> = ({ navbarHeight }) => {
             accusantium, ad error, beatae adipisci?
           </Typography>
 
-          <TERipple color="primary">
-            <Button variant="secondary" className="border border-primary text-primary">
-              Explore <IconStore name="arrow-right-long" className="text-xl" />
-            </Button>
-          </TERipple>
+          <Button variant="secondary" className="border border-primary text-primary">
+            Explore <IconStore name="arrow-right-long" className="text-xl" />
+          </Button>
         </div>
       </Container>
     </section>
