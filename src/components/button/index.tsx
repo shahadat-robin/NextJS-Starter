@@ -9,6 +9,7 @@ const Button: FC<IButtonProps> = ({
   size = 'md',
   variant = 'primary',
   disabled = false,
+  onClick,
 }) => (
   <TERipple>
     <button
@@ -24,10 +25,11 @@ const Button: FC<IButtonProps> = ({
           'bg-transparent border': variant === 'transparent',
         },
         disabled ? 'disabled:cursor-not-allowed' : 'hover:shadow-md',
-        'flex items-center gap-2 rounded transition-all',
+        'flex items-center gap-2 rounded transition-all dark:bg-primary',
         className
       )}
       disabled={disabled}
+      onClick={onClick}
     >
       {children}
     </button>

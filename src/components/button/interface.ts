@@ -6,4 +6,5 @@ export interface IButtonProps extends PropsWithChildren {
   size?: 'lg' | 'md' | 'sm';
   variant?: 'primary' | 'secondary' | 'transparent';
   disabled?: boolean;
+  onClick?: () => void;
 }
