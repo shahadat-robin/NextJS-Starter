@@ -9,7 +9,7 @@ import type { ISection } from '../interface';
 const HeroSection: FC<ISection> = ({ navbarHeight }) => {
   return (
     <section
-      className={cn('flex bg-secondary dark:bg-dark')}
+      className={cn(`flex bg-secondary dark:bg-dark`)}
       style={{ minHeight: `calc(100vh - ${navbarHeight}px)` }}
     >
       <Container className="flex items-center justify-center">

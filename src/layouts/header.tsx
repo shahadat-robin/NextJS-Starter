@@ -16,6 +16,7 @@ const AppHeader: FC = () => {
           width={100}
           height={50}
           className="h-10 cursor-pointer"
+          priority
         />
 
         <label htmlFor="theme-toggle" className="flex items-center cursor-pointer">

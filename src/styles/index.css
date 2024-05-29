@@ -1,6 +1,4 @@
 @tailwind base;
-@tailwind components;
-@tailwind utilities;
 
 @layer base {
   body {
@@ -8,3 +6,6 @@
         bg-[#edf6f9];
   }
 }
+
+@tailwind components;
+@tailwind utilities;
