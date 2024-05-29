@@ -7,6 +7,7 @@ This is a [Next.js](https://nextjs.org/) project starter kit bootstrapped with [
 - **Next.js 14:** The latest version of Next.js with all its powerful features.
 - **TypeScript:** TypeScript support for type safety and better developer experience.
 - **Tailwind CSS:** Utility-first CSS framework for rapid UI development.
+- **Theaming:** Dark and Light theme enhanched.
 - **ESLint and Prettier:** Code quality tools to maintain a consistent codebase.
 - **Husky:** Automatically lint commit messages and code upon committing.
 - **Environment Variables:** Easy management of environment variables.
