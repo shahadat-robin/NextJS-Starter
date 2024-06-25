@@ -1,17 +1,22 @@
 'use client';
 
+import ReactLenis from 'lenis/react';
 import { ThemeProvider } from 'next-themes';
+import dynamic from 'next/dynamic';
 import { type FC, type PropsWithChildren } from 'react';
-import Footer from './footer';
+
 import AppHeader from './header';
+const Footer = dynamic(() => import('./footer'), { ssr: false });
 
 const AppLayout: FC<PropsWithChildren> = ({ children }) => {
   return (
-    <ThemeProvider attribute="class" defaultTheme="light">
-      <AppHeader />
-      <main className="min-h-screen flex flex-col">{children}</main>
-      <Footer />
-    </ThemeProvider>
+    <ReactLenis root>
+      <ThemeProvider attribute="class" defaultTheme="light">
+        <AppHeader />
+        <main>{children}</main>
+        <Footer />
+      </ThemeProvider>
+    </ReactLenis>
   );
 };
 

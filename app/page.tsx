@@ -4,7 +4,7 @@ import Loader from '@/components/loader';
 import dynamic from 'next/dynamic';
 
 const HomePage = dynamic(() => import('@/page-builder/home-page'), {
-  loading: () => <Loader />,
+  loading: () => <Loader viewport={true} />,
   ssr: false,
 });
 
