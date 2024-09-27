@@ -17,6 +17,10 @@ const config: Config = {
       },
       container: {
         center: true,
+        screens: {
+          sm: '100%',
+          '2xl': '1496px',
+        },
       },
     },
   },
