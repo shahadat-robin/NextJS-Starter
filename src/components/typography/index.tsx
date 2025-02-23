@@ -1,8 +1,7 @@
 import { cn } from '@/utils/class-merge';
-import type { FC } from 'react';
 import type ITypography from './interface';
 
-const Typography: FC<ITypography> = ({ children, variant = 'p1', className }) => {
+export default function Typography({ children, variant = 'p1', className }: ITypography) {
   const Wrapper = variant === 'p1' || variant === 'p2' ? 'p' : variant;
 
   return (
@@ -24,6 +23,6 @@ const Typography: FC<ITypography> = ({ children, variant = 'p1', className }) =>
       {children}
     </Wrapper>
   );
-};
+}
 
-export default Typography;
+Typography.displayName = 'Typography';

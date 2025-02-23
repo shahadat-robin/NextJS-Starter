@@ -1,8 +1,6 @@
 import type { NextPage } from 'next';
-import dynamic from 'next/dynamic';
+import AnotherSection from './sub-components/another-section';
 import HeroSection from './sub-components/hero-section';
-
-const AnotherSection = dynamic(() => import('./sub-components/another-section'), { ssr: false });
 
 const HomePage: NextPage = () => (
   <>

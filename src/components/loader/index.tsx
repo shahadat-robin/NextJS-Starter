@@ -1,8 +1,7 @@
 import { cn } from '@/utils/class-merge';
-import type { FC } from 'react';
 import type { ILoadingState } from './interface';
 
-const Loader: FC<ILoadingState> = ({ viewport }) => {
+export default function Loader({ viewport }: ILoadingState) {
   return (
     <section
       className={cn(
@@ -16,6 +15,6 @@ const Loader: FC<ILoadingState> = ({ viewport }) => {
       </span>
     </section>
   );
-};
+}
 
-export default Loader;
+Loader.displayName = 'Loader';

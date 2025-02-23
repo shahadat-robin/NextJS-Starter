@@ -1,9 +1,8 @@
-import type { FC } from 'react';
 import { ArrowRightLong } from './arrow-icons';
 import type { IIconProps } from './interface';
 import { MoonIcon, SunIcon } from './weather-icons';
 
-const IconStore: FC<IIconProps> = ({ name, ...rest }) => {
+export default function IconStore({ name, ...rest }: IIconProps) {
   switch (name) {
     // arrow icons
     case 'arrow-right-long':
@@ -15,6 +14,4 @@ const IconStore: FC<IIconProps> = ({ name, ...rest }) => {
     case 'moon':
       return <MoonIcon {...rest} />;
   }
-};
-
-export default IconStore;
+}
