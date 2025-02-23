@@ -2,10 +2,18 @@
 
 @layer base {
   body {
-    @apply dark:bg-[#102940] 
-        bg-[#edf6f9];
+    @apply bg-white-deep dark:bg-dark;
   }
 }
 
 @tailwind components;
+
 @tailwind utilities;
+@layer utilities {
+  .section-padding {
+    padding: 5rem 0;
+    @media (max-width: 768px) {
+      padding: 2.5rem 0;
+    }
+  }
+}

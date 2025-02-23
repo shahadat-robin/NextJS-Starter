@@ -1,21 +1,22 @@
+'use client';
+
 import Container from '@/components/container';
 import IconStore from '@/components/icon-store';
 import { useTheme } from 'next-themes';
 import Image from 'next/image';
-import type { FC } from 'react';
 
-const AppHeader: FC = () => {
+export default function AppHeader() {
   const { theme, setTheme } = useTheme();
 
   return (
-    <header className="p-5 sticky top-0 bg-primary dark:bg-light-dark z-50">
+    <header className="p-5 sticky top-0 bg-primary dark:bg-dark-light z-50">
       <Container className="flex items-center justify-between">
         <Image
           src="/next.svg"
           alt="Brand logo"
           width={100}
           height={50}
-          className="h-10 cursor-pointer"
+          className="h-auto w-[6.25rem] cursor-pointer"
           priority
         />
 
@@ -28,7 +29,7 @@ const AppHeader: FC = () => {
               className="checkbox hidden"
               onChange={() => setTheme(theme === 'light' ? 'dark' : 'light')}
             />
-            <div className="absolute right-1 top-1/2 -translate-y-1/2 bg-light-dark p-1 rounded-full transition-transform duration-200 dark:transform dark:-translate-x-full">
+            <div className="absolute right-1 top-1/2 -translate-y-1/2 bg-dark-light p-1 rounded-full transition-transform duration-200 dark:transform dark:-translate-x-full">
               <IconStore name="moon" className="hidden dark:block text-white" />
               <IconStore name="sun" className="block dark:hidden text-yellow-500" />
             </div>
@@ -37,6 +38,4 @@ const AppHeader: FC = () => {
       </Container>
     </header>
   );
-};
-
-export default AppHeader;
+}

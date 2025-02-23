@@ -1,15 +1,12 @@
 import Container from '@/components/container';
 import Typography from '@/components/typography';
-import type { FC } from 'react';
 
-const Footer: FC = () => {
+export default function Footer() {
   return (
-    <footer className="bg-primary dark:bg-light-dark">
-      <Container className="py-10 text-center">
+    <footer className="bg-primary dark:bg-dark-light">
+      <Container className="py-5 text-center">
         <Typography>This is Footer</Typography>
       </Container>
     </footer>
   );
-};
-
-export default Footer;
+}

@@ -1,3 +1,5 @@
+'use client';
+
 import { cn } from '@/utils/class-merge';
 import type { FC } from 'react';
 import { TERipple } from 'tw-elements-react';
@@ -21,7 +23,7 @@ const Button: FC<IButtonProps> = ({
         },
         {
           'bg-primary': variant === 'primary',
-          'bg-secondary': variant === 'secondary',
+          'bg-primary-light': variant === 'secondary',
           'bg-transparent border': variant === 'transparent',
         },
         disabled ? 'disabled:cursor-not-allowed' : 'hover:shadow-md',

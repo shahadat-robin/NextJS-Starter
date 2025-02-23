@@ -3,15 +3,10 @@ import Container from '@/components/container';
 import IconStore from '@/components/icon-store';
 import Typography from '@/components/typography';
 import { cn } from '@/utils/class-merge';
-import type { FC } from 'react';
-import type { ISection } from '../interface';
 
-const HeroSection: FC<ISection> = ({ navbarHeight }) => {
+export default function HeroSection() {
   return (
-    <section
-      className={cn(`flex bg-secondary dark:bg-dark`)}
-      style={{ minHeight: `calc(100vh - ${navbarHeight}px)` }}
-    >
+    <section className={cn(`flex section-padding min-h-screen`)}>
       <Container className="flex items-center justify-center">
         <div className="text-center space-y-5">
           <Typography variant="h1">This is Hero Section</Typography>
@@ -31,6 +26,4 @@ const HeroSection: FC<ISection> = ({ navbarHeight }) => {
       </Container>
     </section>
   );
-};
-
-export default HeroSection;
+}

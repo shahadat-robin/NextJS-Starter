@@ -10,10 +10,29 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        primary: '#93CF95',
-        secondary: '#DBEFDC',
-        dark: '#102940',
-        'light-dark': '#1A456B',
+        primary: {
+          DEFAULT: '#ff4733',
+          light: '#ffada2',
+          lighter: '#ffc6bf',
+        },
+
+        white: {
+          DEFAULT: '#EEEEEE',
+          deep: '#ffffff',
+          light: '#edf6f9',
+        },
+
+        dark: {
+          DEFAULT: '#26282B',
+          deep: '#1e1e1e',
+          light: '#363B4E',
+        },
+
+        gray: {
+          DEFAULT: '#555555',
+          deep: '#404040',
+          light: '#999999',
+        },
       },
       container: {
         center: true,
