@@ -9,7 +9,7 @@ export default function AppHeader() {
   const { theme, setTheme } = useTheme();
 
   return (
-    <header className="p-5 sticky top-0 bg-primary dark:bg-dark-light z-50">
+    <header className="py-5 sticky top-0 bg-primary dark:bg-dark-light z-50">
       <Container className="flex items-center justify-between">
         <Image
           src="/next.svg"

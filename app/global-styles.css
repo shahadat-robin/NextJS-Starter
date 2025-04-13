@@ -4,6 +4,61 @@
   body {
     @apply bg-white-deep dark:bg-dark;
   }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: 600;
+  }
+
+  h1 {
+    font-size: clamp(2rem, 10vw, 3rem); /* 32px → 48px */
+    line-height: clamp(2.5rem, 11vw, 4rem); /* Fluid height */
+  }
+
+  h2 {
+    font-size: clamp(1.5rem, 8vw, 2rem); /* 24px → 32px */
+    line-height: clamp(2rem, 9vw, 3rem);
+  }
+
+  h3 {
+    font-size: clamp(1.25rem, 6vw, 1.5rem); /* 20px → 24px */
+    line-height: clamp(1.75rem, 7vw, 2.5rem);
+  }
+
+  h4 {
+    font-size: clamp(1.125rem, 4vw, 1.25rem); /* 18px → 20px */
+    line-height: clamp(1.5rem, 5vw, 2rem);
+  }
+
+  h5 {
+    font-size: clamp(1rem, 3vw, 1.125rem); /* 16px → 18px */
+    line-height: clamp(1.25rem, 4vw, 1.75rem);
+  }
+
+  h6 {
+    font-size: clamp(0.875rem, 2vw, 1rem); /* 14px → 16px */
+    line-height: clamp(1.125rem, 3vw, 1.5rem);
+  }
+
+  p,
+  a,
+  ol,
+  ul,
+  li,
+  label,
+  div,
+  span {
+    font-size: clamp(0.875rem, 2vw, 1rem);
+    line-height: clamp(1.125rem, 3vw, 1.5rem);
+  }
+
+  .container {
+    padding: 0 min(1.25rem, 5%);
+  }
 }
 
 @tailwind components;
@@ -11,9 +66,6 @@
 @tailwind utilities;
 @layer utilities {
   .section-padding {
-    padding: 5rem 0;
-    @media (max-width: 768px) {
-      padding: 2.5rem 0;
-    }
+    padding: min(5rem, 10%) 0;
   }
 }

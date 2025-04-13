@@ -9,6 +9,11 @@ export default function HeroSection() {
     <section className={cn(`flex section-padding min-h-screen`)}>
       <Container className="flex items-center justify-center">
         <div className="text-center space-y-5">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis molestias a,
+            blanditiis neque ex nobis totam. Voluptate voluptatum culpa veniam a dignissimos iusto
+            reprehenderit adipisci vitae, debitis ducimus cupiditate rem.
+          </p>
           <Typography variant="h1">This is Hero Section</Typography>
           <Typography className="lg:w-3/5 mx-auto">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius fuga culpa ea velit
