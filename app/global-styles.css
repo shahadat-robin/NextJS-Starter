@@ -68,4 +68,8 @@
   .section-padding {
     padding: min(5rem, 10%) 0;
   }
+
+  .border-image {
+    border-image: linear-gradient(to right, #0066ff, #ff32d6) 1;
+  }
 }
