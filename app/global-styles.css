@@ -15,7 +15,7 @@
   }
 
   h1 {
-    font-size: clamp(2rem, 10vw, 3rem); /* 32px → 48px */
+    font-size: clamp(2rem, 8vw, 3rem); /* 32px → 48px */
     line-height: clamp(2.5rem, 11vw, 4rem); /* Fluid height */
   }
 
