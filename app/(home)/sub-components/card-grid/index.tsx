@@ -6,7 +6,7 @@ export default function CardGridLayoutSection() {
     if (index % 9 === 2 || index % 9 === 4 || index % 9 === 6) {
       return 'md:col-span-2 border-primary';
     }
-    return 'col-span-1';
+    return 'col-span-1 dark:border-dark-light ';
   };
 
   return (
@@ -19,7 +19,7 @@ export default function CardGridLayoutSection() {
               key={index}
               className={cn(
                 getColumnSpan(index),
-                'border p-5 rounded-md bg-white hover:shadow-md transition-shadow'
+                'border p-5 rounded-md bg-white dark:bg-dark-deep hover:shadow-md transition-shadow'
               )}
             >
               <h3 className="text-gray-light text-5xl">{index + 1}</h3>
