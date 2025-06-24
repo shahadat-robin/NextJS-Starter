@@ -48,19 +48,16 @@ Open [http://localhost:3000](http://localhost:3000) into your browser to see the
 ```plaintext
 NextJS-Starter/
 ├── public/                # Static assets
-│   pages/                 # Next.js pages
+│   app/                   # Next.js pages
+│   ├── _layout/           # Layout components
+│   └── (home)/            # Home page grouping
 ├── src/
-│   ├── styles/            # Global styles
-│   ├── layouts/           # Layout components
 │   ├── components/        # Reusable components
-│   ├── page-builder/      # Build page from here with better and simpler drive more custom component.
 │   ├── utils/             # Utility functions
 │   ├── hooks/             # Custom React hooks
-│   ├── services/          # API services
-│   └── context/           # React context for global state
-├── .eslintrc.js           # ESLint configuration
+│   └── services/          # API services
+├── .eslintrc.json         # ESLint configuration
 ├── .prettierrc            # Prettier configuration
-├── jest.config.js         # Jest configuration
 ├── next.config.js         # Next.js configuration
 ├── tsconfig.json          # TypeScript configuration
 └── package.json           # Project metadata and scripts
