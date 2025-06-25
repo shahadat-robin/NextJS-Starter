@@ -32,6 +32,7 @@ export default function Button({
         )}
         disabled={disabled}
         onClick={onClick}
+        aria-label=""
       >
         {children}
       </button>
