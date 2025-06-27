@@ -1,10 +1,6 @@
-import type { ClassValue } from 'clsx';
-import type { PropsWithChildren } from 'react';
+import type { ButtonHTMLAttributes, PropsWithChildren } from 'react';
 
-export interface IButtonProps extends PropsWithChildren {
-  className?: ClassValue;
+export interface IButtonProps extends PropsWithChildren, ButtonHTMLAttributes<HTMLButtonElement> {
   size?: 'lg' | 'md' | 'sm';
   variant?: 'primary' | 'secondary' | 'transparent';
-  disabled?: boolean;
-  onClick?: () => void;
 }

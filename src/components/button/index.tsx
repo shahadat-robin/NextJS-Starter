@@ -10,7 +10,7 @@ export default function Button({
   size = 'md',
   variant = 'primary',
   disabled = false,
-  onClick,
+  ...rest
 }: IButtonProps) {
   return (
     <TERipple>
@@ -31,8 +31,7 @@ export default function Button({
           className
         )}
         disabled={disabled}
-        onClick={onClick}
-        aria-label=""
+        {...rest}
       >
         {children}
       </button>
