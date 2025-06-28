@@ -6,4 +6,5 @@ export type WeatherIcons = 'moon' | 'sun';
 export interface IIconProps {
   name: ArrowIcons | WeatherIcons;
   className?: ClassValue;
+  onClick?: () => void;
 }

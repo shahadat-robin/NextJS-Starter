@@ -1,7 +1,4 @@
-import { cn } from '@/utils/class-merge';
-import type { IIconProps } from './interface';
-
-export function SunIcon({ className }: Omit<IIconProps, 'name'>) {
+export function SunIcon() {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -10,10 +7,9 @@ export function SunIcon({ className }: Omit<IIconProps, 'name'>) {
       viewBox="0 0 24 24"
       fill="none"
       stroke="currentColor"
-      strokeWidth="2"
+      strokeWidth={2}
       strokeLinecap="round"
       strokeLinejoin="round"
-      className={cn(className)}
     >
       <circle cx="12" cy="12" r="4" />
       <path d="M12 2v2" />
@@ -28,7 +24,7 @@ export function SunIcon({ className }: Omit<IIconProps, 'name'>) {
   );
 }
 
-export function MoonIcon({ className }: Omit<IIconProps, 'name'>) {
+export function MoonIcon() {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -37,10 +33,9 @@ export function MoonIcon({ className }: Omit<IIconProps, 'name'>) {
       viewBox="0 0 24 24"
       fill="none"
       stroke="currentColor"
-      strokeWidth="2"
+      strokeWidth={2}
       strokeLinecap="round"
       strokeLinejoin="round"
-      className={cn(className)}
     >
       <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9" />
       <path d="M20 3v4" />

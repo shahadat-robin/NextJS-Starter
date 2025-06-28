@@ -1,16 +1,15 @@
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
 import type { PropsWithChildren } from 'react';
 import Footer from './_layout/footer';
 import AppHeader from './_layout/header';
-import './global-styles.css';
 import RootProvider from './provider';
+import './styles.css';
 
-const inter = Inter({
-  subsets: ['latin'],
-  style: 'normal',
-  weight: ['400', '500', '600', '700'],
-});
+// const inter = Inter({
+//   subsets: ['latin'],
+//   style: 'normal',
+//   weight: ['400', '500', '600', '700'],
+// });
 
 export const metadata: Metadata = {
   title: 'NextJS Project Starter',
@@ -20,7 +19,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Readonly<PropsWithChildren>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={inter.className} cz-shortcut-listen="true">
+      <body cz-shortcut-listen="true">
         <RootProvider>
           <AppHeader />
           {children}

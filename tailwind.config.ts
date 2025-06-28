@@ -34,11 +34,15 @@ const config: Config = {
           light: '#999999',
         },
       },
+      fontFamily: {
+        heading: ['"Averia Serif Libre"', 'serif'],
+        body: ['"Roboto Slab"', 'Roboto', 'serif'],
+      },
       container: {
         center: true,
         screens: {
           sm: '100%',
-          '2xl': '1496px',
+          '2xl': '1280px',
         },
       },
     },

@@ -1,8 +1,9 @@
-@tailwind base;
+@import url('https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto+Slab:wght@400..700&display=swap');
 
+@tailwind base;
 @layer base {
   body {
-    @apply bg-white-deep dark:bg-dark;
+    @apply bg-white-deep dark:bg-dark font-body;
   }
 
   h1,
@@ -11,11 +12,11 @@
   h4,
   h5,
   h6 {
-    font-weight: 600;
+    @apply font-semibold font-heading;
   }
 
   h1 {
-    font-size: clamp(2rem, 8vw, 3rem); /* 32px → 48px */
+    font-size: clamp(2rem, 10vw, 3rem); /* 32px → 48px */
     line-height: clamp(2.5rem, 11vw, 4rem); /* Fluid height */
   }
 
@@ -57,7 +58,7 @@
   }
 
   .container {
-    padding: 0 min(1.25rem, 5%);
+    @apply px-4;
   }
 }
 
@@ -66,6 +67,6 @@
 @tailwind utilities;
 @layer utilities {
   .section-padding {
-    padding: min(5rem, 10%) 0;
+    padding: min(10vw, 5rem) 0;
   }
 }

@@ -1,7 +1,4 @@
-import { cn } from '@/utils/class-merge';
-import type { IIconProps } from './interface';
-
-export function ArrowRightLong({ className }: Omit<IIconProps, 'name'>) {
+export function ArrowRightLong() {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -11,7 +8,6 @@ export function ArrowRightLong({ className }: Omit<IIconProps, 'name'>) {
       fill="none"
       strokeWidth={1.5}
       stroke="currentColor"
-      className={cn(className)}
     >
       <path
         strokeLinecap="round"
